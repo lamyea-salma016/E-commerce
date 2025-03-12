@@ -1,16 +1,21 @@
 import 'package:flutter/material.dart';
 
+import 'package:lab7/screens/home/pages/home.dart';
+
+
+
 void main() {
-  runApp(const FreebiesEcom());
+  runApp(const MyApp());
 }
 
-
-class FreebiesEcom extends StatelessWidget {
-  const FreebiesEcom({super.key});
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp();
-      title: "Freebies E-com";
+    return MaterialApp(
+      title: 'Firebase E-com',
+      home: Home(),
+    );
   }
 }
